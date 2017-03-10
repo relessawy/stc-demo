@@ -10,29 +10,14 @@ public class DeductionRequest implements java.io.Serializable
 
    static final long serialVersionUID = 1L;
 
-   @javax.persistence.GeneratedValue(generator = "DEDUCTIONREQUEST_ID_GENERATOR", strategy = javax.persistence.GenerationType.AUTO)
-   @javax.persistence.Id
-   @javax.persistence.SequenceGenerator(name = "DEDUCTIONREQUEST_ID_GENERATOR", sequenceName = "DEDUCTIONREQUEST_ID_SEQ")
-   private java.lang.Long id;
-
-   @org.kie.api.definition.type.Label(value = "Amount")
+   @org.kie.api.definition.type.Label("Amount")
    private java.lang.Float amount;
 
-   @org.kie.api.definition.type.Label(value = "Status")
+   @org.kie.api.definition.type.Label("Status")
    private java.lang.String status;
 
    public DeductionRequest()
    {
-   }
-
-   public java.lang.Long getId()
-   {
-      return this.id;
-   }
-
-   public void setId(java.lang.Long id)
-   {
-      this.id = id;
    }
 
    public java.lang.Float getAmount()
@@ -55,10 +40,8 @@ public class DeductionRequest implements java.io.Serializable
       this.status = status;
    }
 
-   public DeductionRequest(java.lang.Long id, java.lang.Float amount,
-         java.lang.String status)
+   public DeductionRequest(java.lang.Float amount, java.lang.String status)
    {
-      this.id = id;
       this.amount = amount;
       this.status = status;
    }
