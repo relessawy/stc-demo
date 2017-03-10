@@ -16,6 +16,9 @@ public class Employee implements java.io.Serializable
    @javax.persistence.SequenceGenerator(name = "EMPLOYEE_ID_GENERATOR", sequenceName = "EMPLOYEE_ID_SEQ")
    private java.lang.Long id;
 
+   @org.kie.api.definition.type.Label(value = "Name")
+   private java.lang.String name;
+
    public Employee()
    {
    }
@@ -30,9 +33,20 @@ public class Employee implements java.io.Serializable
       this.id = id;
    }
 
-   public Employee(java.lang.Long id)
+   public java.lang.String getName()
+   {
+      return this.name;
+   }
+
+   public void setName(java.lang.String name)
+   {
+      this.name = name;
+   }
+
+   public Employee(java.lang.Long id, java.lang.String name)
    {
       this.id = id;
+      this.name = name;
    }
 
 }
