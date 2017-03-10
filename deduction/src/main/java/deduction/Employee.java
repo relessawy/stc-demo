@@ -16,11 +16,8 @@ public class Employee implements java.io.Serializable
    @javax.persistence.SequenceGenerator(name = "EMPLOYEE_ID_GENERATOR", sequenceName = "EMPLOYEE_ID_SEQ")
    private java.lang.Long id;
 
-   @org.kie.api.definition.type.Label(value = "Name")
+   @org.kie.api.definition.type.Label("Name")
    private java.lang.String name;
-
-   @org.kie.api.definition.type.Label(value = "Amount")
-   private java.lang.Float amount;
 
    public Employee()
    {
@@ -46,21 +43,10 @@ public class Employee implements java.io.Serializable
       this.name = name;
    }
 
-   public java.lang.Float getAmount()
-   {
-      return this.amount;
-   }
-
-   public void setAmount(java.lang.Float amount)
-   {
-      this.amount = amount;
-   }
-
-   public Employee(java.lang.Long id, java.lang.String name, java.lang.Float amount)
+   public Employee(java.lang.Long id, java.lang.String name)
    {
       this.id = id;
       this.name = name;
-      this.amount = amount;
    }
 
 }
