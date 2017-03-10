@@ -5,28 +5,34 @@ package deduction;
  */
 
 @javax.persistence.Entity
-public class Employee implements java.io.Serializable {
+@org.kie.api.definition.type.Label("Employee")
+public class Employee implements java.io.Serializable
+{
 
-    static final long serialVersionUID = 1L;
+   static final long serialVersionUID = 1L;
 
-    @javax.persistence.GeneratedValue(generator = "EMPLOYEE_ID_GENERATOR", strategy = javax.persistence.GenerationType.AUTO)
-    @javax.persistence.Id
-    @javax.persistence.SequenceGenerator(name = "EMPLOYEE_ID_GENERATOR", sequenceName = "EMPLOYEE_ID_SEQ")
-    private java.lang.Long id;
+   @javax.persistence.GeneratedValue(generator = "EMPLOYEE_ID_GENERATOR", strategy = javax.persistence.GenerationType.AUTO)
+   @javax.persistence.Id
+   @javax.persistence.SequenceGenerator(name = "EMPLOYEE_ID_GENERATOR", sequenceName = "EMPLOYEE_ID_SEQ")
+   private java.lang.Long id;
 
-    public Employee() {
-    }
-    
-    public Employee(java.lang.Long id) {
-        this.id = id;
-    }
+   public Employee()
+   {
+   }
 
-    public java.lang.Long getId() {
-        return this.id;
-    }
-    
-    public void setId(java.lang.Long id) {
-        this.id = id;
-    }
+   public java.lang.Long getId()
+   {
+      return this.id;
+   }
+
+   public void setId(java.lang.Long id)
+   {
+      this.id = id;
+   }
+
+   public Employee(java.lang.Long id)
+   {
+      this.id = id;
+   }
 
 }
