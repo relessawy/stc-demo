@@ -5,28 +5,62 @@ package deduction;
  */
 
 @javax.persistence.Entity
-public class DeductionRequest implements java.io.Serializable {
+public class DeductionRequest implements java.io.Serializable
+{
 
-    static final long serialVersionUID = 1L;
+   static final long serialVersionUID = 1L;
 
-    @javax.persistence.GeneratedValue(generator = "DEDUCTIONREQUEST_ID_GENERATOR", strategy = javax.persistence.GenerationType.AUTO)
-    @javax.persistence.Id
-    @javax.persistence.SequenceGenerator(name = "DEDUCTIONREQUEST_ID_GENERATOR", sequenceName = "DEDUCTIONREQUEST_ID_SEQ")
-    private java.lang.Long id;
+   @javax.persistence.GeneratedValue(generator = "DEDUCTIONREQUEST_ID_GENERATOR", strategy = javax.persistence.GenerationType.AUTO)
+   @javax.persistence.Id
+   @javax.persistence.SequenceGenerator(name = "DEDUCTIONREQUEST_ID_GENERATOR", sequenceName = "DEDUCTIONREQUEST_ID_SEQ")
+   private java.lang.Long id;
 
-    public DeductionRequest() {
-    }
-    
-    public DeductionRequest(java.lang.Long id) {
-        this.id = id;
-    }
+   @org.kie.api.definition.type.Label(value = "Amount")
+   private java.lang.Float amount;
 
-    public java.lang.Long getId() {
-        return this.id;
-    }
-    
-    public void setId(java.lang.Long id) {
-        this.id = id;
-    }
+   @org.kie.api.definition.type.Label(value = "Status")
+   private java.lang.String status;
+
+   public DeductionRequest()
+   {
+   }
+
+   public java.lang.Long getId()
+   {
+      return this.id;
+   }
+
+   public void setId(java.lang.Long id)
+   {
+      this.id = id;
+   }
+
+   public java.lang.Float getAmount()
+   {
+      return this.amount;
+   }
+
+   public void setAmount(java.lang.Float amount)
+   {
+      this.amount = amount;
+   }
+
+   public java.lang.String getStatus()
+   {
+      return this.status;
+   }
+
+   public void setStatus(java.lang.String status)
+   {
+      this.status = status;
+   }
+
+   public DeductionRequest(java.lang.Long id, java.lang.Float amount,
+         java.lang.String status)
+   {
+      this.id = id;
+      this.amount = amount;
+      this.status = status;
+   }
 
 }
