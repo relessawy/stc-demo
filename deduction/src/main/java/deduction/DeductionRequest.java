@@ -13,9 +13,8 @@ public class DeductionRequest implements java.io.Serializable
    @org.kie.api.definition.type.Label("Amount")
    private java.lang.Float amount;
 
-   @javax.persistence.ElementCollection(fetch = javax.persistence.FetchType.EAGER)
-   @org.kie.api.definition.type.Label(value = "Status")
-   private java.util.List<java.lang.String> status;
+   @org.kie.api.definition.type.Label("Status")
+   private String status;
 
    public DeductionRequest()
    {
@@ -31,18 +30,17 @@ public class DeductionRequest implements java.io.Serializable
       this.amount = amount;
    }
 
-   public java.util.List<java.lang.String> getStatus()
+   public java.lang.String getStatus()
    {
       return this.status;
    }
 
-   public void setStatus(java.util.List<java.lang.String> status)
+   public void setStatus(java.lang.String status)
    {
       this.status = status;
    }
 
-   public DeductionRequest(java.lang.Float amount,
-         java.util.List<java.lang.String> status)
+   public DeductionRequest(java.lang.Float amount, java.lang.String status)
    {
       this.amount = amount;
       this.status = status;
