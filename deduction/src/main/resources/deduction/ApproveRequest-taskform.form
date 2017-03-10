@@ -45,9 +45,9 @@
 <property name="outputBinding" value="request/amount"/>
 <property name="fieldClass" value="java.lang.Float"/>
 </field>
-<field position="4" name="request_requestStatus" type="InputText" id="1077309108">
+<field position="4" name="request_requestStatus" type="SelectBox" id="1077309108">
 <property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;requestStatus (request)quot;"/>
+<property name="label" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;Status (request)quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
 <property name="readonly" value="false"/>
 <property name="inputBinding" value="request/requestStatus"/>
 <property name="outputBinding" value="request/requestStatus"/>
