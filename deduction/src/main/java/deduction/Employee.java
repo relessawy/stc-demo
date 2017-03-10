@@ -19,6 +19,9 @@ public class Employee implements java.io.Serializable
    @org.kie.api.definition.type.Label("Name")
    private java.lang.String name;
 
+   @org.kie.api.definition.type.Label(value = "Salary")
+   private java.lang.Float salary;
+
    public Employee()
    {
    }
@@ -43,10 +46,21 @@ public class Employee implements java.io.Serializable
       this.name = name;
    }
 
-   public Employee(java.lang.Long id, java.lang.String name)
+   public java.lang.Float getSalary()
+   {
+      return this.salary;
+   }
+
+   public void setSalary(java.lang.Float salary)
+   {
+      this.salary = salary;
+   }
+
+   public Employee(java.lang.Long id, java.lang.String name, java.lang.Float salary)
    {
       this.id = id;
       this.name = name;
+      this.salary = salary;
    }
 
 }
