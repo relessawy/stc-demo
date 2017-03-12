@@ -1,0 +1,1 @@
+[when]Empoyee salary is {salary}=Empoyee(salary=="{salary}")
