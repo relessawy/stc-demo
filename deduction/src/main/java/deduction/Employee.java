@@ -11,7 +11,7 @@ public class Employee implements java.io.Serializable
 
    static final long serialVersionUID = 1L;
 
-   @javax.persistence.GeneratedValue(generator = "EMPLOYEE_ID_GENERATOR", strategy = javax.persistence.GenerationType.AUTO)
+   @javax.persistence.GeneratedValue(strategy = javax.persistence.GenerationType.AUTO, generator = "EMPLOYEE_ID_GENERATOR")
    @javax.persistence.Id
    @javax.persistence.SequenceGenerator(name = "EMPLOYEE_ID_GENERATOR", sequenceName = "EMPLOYEE_ID_SEQ")
    private java.lang.Long id;
@@ -19,8 +19,11 @@ public class Employee implements java.io.Serializable
    @org.kie.api.definition.type.Label("Name")
    private java.lang.String name;
 
-   @org.kie.api.definition.type.Label(value = "Salary")
+   @org.kie.api.definition.type.Label("Salary")
    private java.lang.Float salary;
+
+   @org.kie.api.definition.type.Label(value = "Grade")
+   private java.lang.String grade;
 
    public Employee()
    {
@@ -56,11 +59,23 @@ public class Employee implements java.io.Serializable
       this.salary = salary;
    }
 
-   public Employee(java.lang.Long id, java.lang.String name, java.lang.Float salary)
+   public java.lang.String getGrade()
+   {
+      return this.grade;
+   }
+
+   public void setGrade(java.lang.String grade)
+   {
+      this.grade = grade;
+   }
+
+   public Employee(java.lang.Long id, java.lang.String name,
+         java.lang.Float salary, java.lang.String grade)
    {
       this.id = id;
       this.name = name;
       this.salary = salary;
+      this.grade = grade;
    }
 
 }
