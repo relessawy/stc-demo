@@ -1,0 +1,1 @@
+[when]Something is {colour}=Something(colour=="{colour}")
