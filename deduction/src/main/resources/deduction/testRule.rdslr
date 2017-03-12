@@ -7,5 +7,5 @@ rule "testRule"
 	when
 		>emp : Employee( salary >= 1000 , salary < 2000 )
 	then
-		>emp.setGrade( "Gade 10" );
+		>emp.setGrade( "Grade" + emp.getSalary().toString()  );
 end
