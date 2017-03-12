@@ -1,5 +1,5 @@
 public class OperationCommand
-List status;
+List status1;
 List allowed;
 Status newStatus;
 boolean setNewOwnerToUser;
