@@ -132,35 +132,5 @@
         <isOtherwise>false</isOtherwise>
       </value>
     </list>
-    <list>
-      <value>
-        <valueNumeric class="int">2</valueNumeric>
-        <valueString></valueString>
-        <dataType>NUMERIC_INTEGER</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString></valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueNumeric class="float">100.0</valueNumeric>
-        <valueString></valueString>
-        <dataType>NUMERIC_FLOAT</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueNumeric class="float">300.0</valueNumeric>
-        <valueString></valueString>
-        <dataType>NUMERIC_FLOAT</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>Moderate</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-    </list>
   </data>
 </decision-table52>
