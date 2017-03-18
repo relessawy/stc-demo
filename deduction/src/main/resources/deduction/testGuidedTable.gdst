@@ -65,7 +65,7 @@
       <boundName>emp</boundName>
       <factField>grade</factField>
       <type>String</type>
-      <valueList>p,Poor;m,Moderate,r,Rich</valueList>
+      <valueList>Poor,Moderate,Rich</valueList>
       <update>false</update>
     </set-field-col52>
   </actionCols>
@@ -101,5 +101,66 @@
   </imports>
   <packageName>deduction</packageName>
   <tableFormat>EXTENDED_ENTRY</tableFormat>
-  <data/>
+  <data>
+    <list>
+      <value>
+        <valueNumeric class="int">1</valueNumeric>
+        <valueString></valueString>
+        <dataType>NUMERIC_INTEGER</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString></valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueNumeric class="float">1.0</valueNumeric>
+        <valueString></valueString>
+        <dataType>NUMERIC_FLOAT</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueNumeric class="float">100.0</valueNumeric>
+        <valueString></valueString>
+        <dataType>NUMERIC_FLOAT</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>Poor</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+    </list>
+    <list>
+      <value>
+        <valueNumeric class="int">2</valueNumeric>
+        <valueString></valueString>
+        <dataType>NUMERIC_INTEGER</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString></valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueNumeric class="float">100.0</valueNumeric>
+        <valueString></valueString>
+        <dataType>NUMERIC_FLOAT</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueNumeric class="float">200.0</valueNumeric>
+        <valueString></valueString>
+        <dataType>NUMERIC_FLOAT</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>Moderate</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+    </list>
+  </data>
 </decision-table52>
