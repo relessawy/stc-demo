@@ -1,0 +1,9 @@
+package deduction;
+
+import java.lang.Number;
+
+rule "check_salary"
+	dialect "mvel"
+	when
+	then
+end
