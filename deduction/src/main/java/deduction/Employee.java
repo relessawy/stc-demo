@@ -11,32 +11,22 @@ public class Employee implements java.io.Serializable
 
    static final long serialVersionUID = 1L;
 
-   @javax.persistence.GeneratedValue(strategy = javax.persistence.GenerationType.AUTO, generator = "EMPLOYEE_ID_GENERATOR")
+   @javax.persistence.GeneratedValue(generator = "EMPLOYEE_ID_GENERATOR", strategy = javax.persistence.GenerationType.AUTO)
    @javax.persistence.Id
    @javax.persistence.SequenceGenerator(name = "EMPLOYEE_ID_GENERATOR", sequenceName = "EMPLOYEE_ID_SEQ")
-   private java.lang.Long id;
+   private int id;
 
    @org.kie.api.definition.type.Label("Name")
    private java.lang.String name;
 
    @org.kie.api.definition.type.Label("Salary")
-   private java.lang.Float salary;
+   private int salary;
 
-   @org.kie.api.definition.type.Label(value = "Grade")
+   @org.kie.api.definition.type.Label("Grade")
    private java.lang.String grade;
 
    public Employee()
    {
-   }
-
-   public java.lang.Long getId()
-   {
-      return this.id;
-   }
-
-   public void setId(java.lang.Long id)
-   {
-      this.id = id;
    }
 
    public java.lang.String getName()
@@ -49,16 +39,6 @@ public class Employee implements java.io.Serializable
       this.name = name;
    }
 
-   public java.lang.Float getSalary()
-   {
-      return this.salary;
-   }
-
-   public void setSalary(java.lang.Float salary)
-   {
-      this.salary = salary;
-   }
-
    public java.lang.String getGrade()
    {
       return this.grade;
@@ -69,8 +49,28 @@ public class Employee implements java.io.Serializable
       this.grade = grade;
    }
 
-   public Employee(java.lang.Long id, java.lang.String name,
-         java.lang.Float salary, java.lang.String grade)
+   public int getId()
+   {
+      return this.id;
+   }
+
+   public void setId(int id)
+   {
+      this.id = id;
+   }
+
+   public int getSalary()
+   {
+      return this.salary;
+   }
+
+   public void setSalary(int salary)
+   {
+      this.salary = salary;
+   }
+
+   public Employee(int id, java.lang.String name, int salary,
+         java.lang.String grade)
    {
       this.id = id;
       this.name = name;
