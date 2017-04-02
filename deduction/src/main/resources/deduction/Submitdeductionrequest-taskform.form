@@ -1,0 +1,40 @@
+
+<form id="242857758">
+<property name="name" value="Submitdeductionrequest-taskform.form"/>
+<property name="displayMode" value="default"/>
+<property name="status" value="0"/>
+<field position="0" name="employee_id" type="InputTextPrimitiveInteger" id="417343947">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;id (employee)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="employee/id"/>
+<property name="outputBinding" value="employee/id"/>
+<property name="fieldClass" value="int"/>
+</field>
+<field position="1" name="employee_name" type="InputText" id="1915099617">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;name (employee)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="employee/name"/>
+<property name="outputBinding" value="employee/name"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="2" name="request_amount" type="InputTextFloat" id="1592847762">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;amount (request)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="request/amount"/>
+<property name="outputBinding" value="request/amount"/>
+<property name="fieldClass" value="java.lang.Float"/>
+</field>
+<field position="3" name="request_deductionType" type="InputText" id="63995361">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;deductionType (request)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="request/deductionType"/>
+<property name="outputBinding" value="request/deductionType"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<dataHolder inputId="employee" name="#E9E371" type="dataModelerEntry" outId="employee" value="deduction.Employee" id="employee"/>
+<dataHolder inputId="request" name="#FF54A7" type="dataModelerEntry" outId="request" value="deduction.DeductionRequest" id="request"/>
+</form>
