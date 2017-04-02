@@ -5,5 +5,9 @@ import java.lang.Number;
 rule "check_salary"
 	dialect "mvel"
 	when
+		emp : Employee( )
+		vac : Vacation( hours <= ( emp.getSalary() ) )
+		request : DeductionRequest( )
 	then
+		request.setRequestStatus( "Approved" );
 end
