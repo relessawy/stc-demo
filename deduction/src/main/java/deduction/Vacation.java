@@ -9,24 +9,66 @@ public class Vacation implements java.io.Serializable {
 
     static final long serialVersionUID = 1L;
 
-    @javax.persistence.GeneratedValue(generator = "VACATION_ID_GENERATOR", strategy = javax.persistence.GenerationType.AUTO)
-    @javax.persistence.Id
-    @javax.persistence.SequenceGenerator(name = "VACATION_ID_GENERATOR", sequenceName = "VACATION_ID_SEQ")
-    private java.lang.Long id;
+    @org.kie.api.definition.type.Label("First Name")
+   private java.lang.String firstName;
+   @org.kie.api.definition.type.Label("Last Name")
+   private java.lang.String lastName;
+   @org.kie.api.definition.type.Label("Hours")
+   private int hours;
+   @org.kie.api.definition.type.Label("ID")
+   private java.lang.String id;
 
-    public Vacation() {
-    }
-    
-    public Vacation(java.lang.Long id) {
-        this.id = id;
-    }
+   public Vacation()
+   {
+   }
 
-    public java.lang.Long getId() {
-        return this.id;
-    }
-    
-    public void setId(java.lang.Long id) {
-        this.id = id;
-    }
+   public java.lang.String getFirstName()
+   {
+      return this.firstName;
+   }
+
+   public void setFirstName(java.lang.String firstName)
+   {
+      this.firstName = firstName;
+   }
+
+   public java.lang.String getLastName()
+   {
+      return this.lastName;
+   }
+
+   public void setLastName(java.lang.String lastName)
+   {
+      this.lastName = lastName;
+   }
+
+   public java.lang.String getId()
+   {
+      return this.id;
+   }
+
+   public void setId(java.lang.String id)
+   {
+      this.id = id;
+   }
+
+   public int getHours()
+   {
+      return this.hours;
+   }
+
+   public void setHours(int hours)
+   {
+      this.hours = hours;
+   }
+
+   public Vacation(java.lang.String firstName, java.lang.String lastName,
+         int hours, java.lang.String id)
+   {
+      this.firstName = firstName;
+      this.lastName = lastName;
+      this.hours = hours;
+      this.id = id;
+   }
 
 }
