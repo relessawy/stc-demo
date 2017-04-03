@@ -11,9 +11,7 @@ public class Employee implements java.io.Serializable
 
    static final long serialVersionUID = 1L;
 
-   @javax.persistence.GeneratedValue(generator = "EMPLOYEE_ID_GENERATOR", strategy = javax.persistence.GenerationType.AUTO)
-   @javax.persistence.Id
-   @javax.persistence.SequenceGenerator(name = "EMPLOYEE_ID_GENERATOR", sequenceName = "EMPLOYEE_ID_SEQ")
+   @org.kie.api.definition.type.Label("ID")
    private int id;
 
    @org.kie.api.definition.type.Label("Name")
