@@ -5,14 +5,13 @@ package deduction;
  */
 
 @javax.persistence.Entity
-
 public class Employee implements java.io.Serializable
 {
 
    static final long serialVersionUID = 1L;
 
    @org.kie.api.definition.type.Label("ID")
-   private int id;
+   private String id;
 
    @org.kie.api.definition.type.Label("Name")
    private java.lang.String name;
@@ -34,16 +33,6 @@ public class Employee implements java.io.Serializable
       this.name = name;
    }
 
-   public int getId()
-   {
-      return this.id;
-   }
-
-   public void setId(int id)
-   {
-      this.id = id;
-   }
-
    public int getSalary()
    {
       return this.salary;
@@ -54,7 +43,17 @@ public class Employee implements java.io.Serializable
       this.salary = salary;
    }
 
-   public Employee(int id, java.lang.String name, int salary)
+   public java.lang.String getId()
+   {
+      return this.id;
+   }
+
+   public void setId(java.lang.String id)
+   {
+      this.id = id;
+   }
+
+   public Employee(java.lang.String id, java.lang.String name, int salary)
    {
       this.id = id;
       this.name = name;
