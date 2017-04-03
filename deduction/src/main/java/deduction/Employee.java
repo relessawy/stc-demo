@@ -22,9 +22,6 @@ public class Employee implements java.io.Serializable
    @org.kie.api.definition.type.Label("Salary")
    private int salary;
 
-   @org.kie.api.definition.type.Label("Grade")
-   private java.lang.String grade;
-
    public Employee()
    {
    }
@@ -37,16 +34,6 @@ public class Employee implements java.io.Serializable
    public void setName(java.lang.String name)
    {
       this.name = name;
-   }
-
-   public java.lang.String getGrade()
-   {
-      return this.grade;
-   }
-
-   public void setGrade(java.lang.String grade)
-   {
-      this.grade = grade;
    }
 
    public int getId()
@@ -69,13 +56,11 @@ public class Employee implements java.io.Serializable
       this.salary = salary;
    }
 
-   public Employee(int id, java.lang.String name, int salary,
-         java.lang.String grade)
+   public Employee(int id, java.lang.String name, int salary)
    {
       this.id = id;
       this.name = name;
       this.salary = salary;
-      this.grade = grade;
    }
 
 }
