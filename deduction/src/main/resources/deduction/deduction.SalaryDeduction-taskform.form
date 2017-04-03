@@ -3,6 +3,15 @@
 <property name="name" value="deduction.SalaryDeduction-taskform.form"/>
 <property name="displayMode" value="default"/>
 <property name="status" value="0"/>
+<field position="0" name="language" type="InputText" id="1537231274">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;language (language)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="language"/>
+<property name="outputBinding" value="language"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
 <dataHolder inputId="" name="#E9E371" type="dataModelerEntry" outId="employee" value="deduction.Employee" id="employee"/>
+<dataHolder inputId="language" name="#E9E371" type="basicType" outId="language" value="java.lang.String" id="language"/>
 <dataHolder inputId="" name="#FF54A7" type="dataModelerEntry" outId="request" value="deduction.DeductionRequest" id="request"/>
 </form>
