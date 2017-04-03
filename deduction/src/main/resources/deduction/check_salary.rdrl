@@ -10,5 +10,5 @@ rule "check_salary"
 		vac : Vacation( hours <= ( emp.getSalary() ) )
 		request : DeductionRequest( )
 	then
-		request.setRequestStatus( "Approved" );
+		request.setRequestStatus( "Allowed" );
 end
