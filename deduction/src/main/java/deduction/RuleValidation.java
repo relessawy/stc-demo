@@ -19,7 +19,7 @@ public class RuleValidation implements java.io.Serializable
 
    private java.lang.String message;
 
-   private java.lang.String language;
+   private java.lang.String language = "en";
 
    public RuleValidation()
    {
@@ -44,12 +44,12 @@ public class RuleValidation implements java.io.Serializable
    public void setKey(java.lang.String key)
    {
       this.key = key;
-
+      this.message = language.equals("ar") ? arabicMessages.get(key) : englishMessages.get(key);
    }
 
    public java.lang.String getMessage()
    {
-      return language.equals("ar") ? arabicMessages.get(key) : englishMessages.get(key);
+      return this.message;
    }
 
    public void setMessage(java.lang.String message)
