@@ -1,0 +1,87 @@
+
+<form id="349942160">
+<property name="name" value="deduction.SalaryDeduction-taskform.form"/>
+<property name="displayMode" value="default"/>
+<property name="status" value="0"/>
+<field position="5" name="request_requestStatus" type="InputText" id="270059051">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;requestStatus (request)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="request/requestStatus"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="10" name="vacation_lastName" type="InputText" id="685984999">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;lastName (vacation)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="vacation/lastName"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="0" name="employee_id" type="InputText" id="472764936">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;id (employee)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="employee/id"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="2" name="employee_salary" type="InputTextPrimitiveInteger" id="2019067149">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;salary (employee)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="employee/salary"/>
+<property name="fieldClass" value="int"/>
+</field>
+<field position="6" name="salary" type="InputTextInteger" id="1190918254">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;salary (salary)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="salary"/>
+<property name="fieldClass" value="java.lang.Integer"/>
+</field>
+<field position="1" name="employee_name" type="InputText" id="508289644">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;name (employee)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="employee/name"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="8" name="vacation_hours" type="InputTextPrimitiveInteger" id="47745247">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;hours (vacation)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="vacation/hours"/>
+<property name="fieldClass" value="int"/>
+</field>
+<field position="3" name="request_amount" type="InputTextFloat" id="1272854133">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;amount (request)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="request/amount"/>
+<property name="fieldClass" value="java.lang.Float"/>
+</field>
+<field position="7" name="vacation_firstName" type="InputText" id="1984851061">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;firstName (vacation)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="vacation/firstName"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="4" name="request_deductionType" type="InputText" id="2031070033">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;deductionType (request)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="request/deductionType"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="9" name="vacation_id" type="InputText" id="622148187">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;id (vacation)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="vacation/id"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<dataHolder inputId="" name="#E9E371" type="dataModelerEntry" outId="employee" value="deduction.Employee" id="employee"/>
+<dataHolder inputId="" name="#FF54A7" type="dataModelerEntry" outId="request" value="deduction.DeductionRequest" id="request"/>
+<dataHolder inputId="" name="#BBBBBB" type="basicType" outId="salary" value="java.lang.Integer" id="salary"/>
+<dataHolder inputId="" name="#9BCAFA" type="dataModelerEntry" outId="vacation" value="deduction.Vacation" id="vacation"/>
+</form>
