@@ -27,10 +27,9 @@ public class RuleValidation implements java.io.Serializable
        arabicMessages.put("rule02","المبلغ المراد خصمه لا يمكن ان يكون اكبر من اجمالي الراتب");
        
        englishMessages.put("rule03","");
-       englishMessages.put("rule04","");
-       
-       
        arabicMessages.put("rule03","");
+       
+       englishMessages.put("rule04","");
        arabicMessages.put("rule04","");
    }
 
