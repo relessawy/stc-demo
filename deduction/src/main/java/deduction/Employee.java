@@ -5,7 +5,7 @@ package deduction;
  */
 
 @javax.persistence.Entity
-@org.kie.api.definition.type.Label("Employee")
+
 public class Employee implements java.io.Serializable
 {
 
