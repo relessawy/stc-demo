@@ -20,6 +20,6 @@ rule "check_salary_not_allowed"
 		request : DeductionRequest( amount >= ( emp.getSalary() ) )
 		ruleValidation : RuleValidation()
 	then
-	    ruleValidation.setKey("rule01");
+	    ruleValidation.setKey("rule02");
 		request.setRequestStatus( "Not Allowed" );
 end
