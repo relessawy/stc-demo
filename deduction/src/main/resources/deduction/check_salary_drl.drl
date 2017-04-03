@@ -1,2 +1,23 @@
 package deduction;
 
+import java.lang.Number;
+
+rule "check_salary_allowed"
+	dialect "mvel"
+	ruleflow-group "salary"
+	when
+		emp : Employee( )
+		request : DeductionRequest( amount < ( emp.getSalary() ) )
+	then
+		request.setRequestStatus( "Allowed" );
+end
+
+rule "check_salary_not_allowed"
+	dialect "mvel"
+	ruleflow-group "salary"
+	when
+		emp : Employee( )
+		request : DeductionRequest( amount >= ( emp.getSalary() ) )
+	then
+		request.setRequestStatus( "Not Allowed" );
+end
