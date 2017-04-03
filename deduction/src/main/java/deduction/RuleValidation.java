@@ -16,7 +16,7 @@ public class RuleValidation implements java.io.Serializable
 	private Map<String, String> arabicMessages = new HashMap<String, String>();
        
    private java.lang.String key;
-   private java.lang.String message;
+
 
    public RuleValidation()
    {
@@ -44,20 +44,16 @@ public class RuleValidation implements java.io.Serializable
       this.key = key;
    }
 
-   public java.lang.String getMessage()
+   public java.lang.String getMessage(String key,String lang)
    {
-      return this.message;
+      return lang.equals("ar")?arabicMessages.get(key):englishMessages.get(key);
    }
 
-   public void setMessage(java.lang.String message)
+   
+   public RuleValidation(java.lang.String key)
    {
-      this.message = message;
-   }
-
-   public RuleValidation(java.lang.String key, java.lang.String message)
-   {
+      this();
       this.key = key;
-      this.message = message;
    }
 
 }
