@@ -38,21 +38,9 @@
 <property name="outputBinding" value="employee/salary"/>
 <property name="fieldClass" value="int"/>
 </field>
-<field position="3" name="employee_grade" type="InputText" id="330327341">
+<field position="3" name="request_amount" type="InputTextFloat" id="811191887">
 <property name="fieldRequired" value="false"/>
 <property name="groupWithPrevious" value="false"/>
-<property name="label" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;grade (employee)quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
-<property name="errorMessage" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
-<property name="title" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
-<property name="readonly" value="true"/>
-<property name="isHTML" value="false"/>
-<property name="hideContent" value="false"/>
-<property name="inputBinding" value="employee/grade"/>
-<property name="outputBinding" value="employee/grade"/>
-<property name="fieldClass" value="java.lang.String"/>
-</field>
-<field position="4" name="request_amount" type="InputTextFloat" id="811191887">
-<property name="fieldRequired" value="false"/>
 <property name="label" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;amount (request)quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
 <property name="errorMessage" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
 <property name="title" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
@@ -61,7 +49,7 @@
 <property name="outputBinding" value="request/amount"/>
 <property name="fieldClass" value="java.lang.Float"/>
 </field>
-<field position="5" name="request_deductionType" type="InputText" id="239746711">
+<field position="4" name="request_deductionType" type="InputText" id="239746711">
 <property name="fieldRequired" value="false"/>
 <property name="label" value="quot;enquot;,quot;deductionType (request)quot;"/>
 <property name="readonly" value="false"/>
@@ -69,7 +57,7 @@
 <property name="outputBinding" value="request/deductionType"/>
 <property name="fieldClass" value="java.lang.String"/>
 </field>
-<field position="6" name="request_requestStatus" type="InputText" id="287033014">
+<field position="5" name="request_requestStatus" type="InputText" id="287033014">
 <property name="fieldRequired" value="false"/>
 <property name="label" value="quot;enquot;,quot;requestStatus (request)quot;"/>
 <property name="readonly" value="false"/>
