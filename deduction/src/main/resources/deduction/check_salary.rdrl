@@ -7,8 +7,7 @@ rule "check_salary"
 	ruleflow-group "salary"
 	when
 		emp : Employee( )
-		vac : Vacation( hours <= ( emp.getSalary() ) )
-		request : DeductionRequest( )
+		request : DeductionRequest( amount < ( emp.getSalary() ) )
 	then
 		request.setRequestStatus( "Allowed" );
 end
