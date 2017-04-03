@@ -19,6 +19,8 @@ public class RuleValidation implements java.io.Serializable
 
    private java.lang.String message;
 
+   private java.lang.String language;
+
    public RuleValidation()
    {
       englishMessages.put("rule01", "Error while fetching your data, Please try again later");
@@ -42,18 +44,12 @@ public class RuleValidation implements java.io.Serializable
    public void setKey(java.lang.String key)
    {
       this.key = key;
-      
-   }
 
-   public java.lang.String getMessage1(String key, String lang)
-   {
-      return lang.equals("ar") ? arabicMessages.get(key) : englishMessages.get(key);
    }
-
 
    public java.lang.String getMessage()
    {
-      return this.message;
+      return language.equals("ar") ? arabicMessages.get(key) : englishMessages.get(key);
    }
 
    public void setMessage(java.lang.String message)
@@ -61,11 +57,23 @@ public class RuleValidation implements java.io.Serializable
       this.message = message;
    }
 
-   public RuleValidation(java.lang.String key, java.lang.String message)
+   public java.lang.String getLanguage()
    {
-      this();
+      return this.language;
+   }
+
+   public void setLanguage(java.lang.String language)
+   {
+      this.language = language;
+   }
+
+   public RuleValidation(java.lang.String key, java.lang.String message,
+         java.lang.String language)
+   {
+       this();
       this.key = key;
       this.message = message;
+      this.language = language;
    }
 
 }
