@@ -65,7 +65,7 @@ public class RuleValidation implements java.io.Serializable
       //return this.message;
       this.message = "";
       for (String key : this.keys) { 		      
-           this.message += "-" + language.equals("ar") ? arabicMessages.get(key) : englishMessages.get(key);
+           this.message += "-" + (language.equals("ar") ? arabicMessages.get(key) : englishMessages.get(key));
       }
       return this.message;
    }
