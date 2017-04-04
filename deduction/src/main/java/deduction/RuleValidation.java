@@ -54,7 +54,7 @@ public class RuleValidation implements java.io.Serializable
 
    public void setMessage(java.lang.String message)
    {
-      this.message = message;
+      //this.message = message;
    }
 
    public java.lang.String getLanguage()
