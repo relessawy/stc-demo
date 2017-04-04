@@ -65,6 +65,8 @@ public class RuleValidation implements java.io.Serializable
    public void setLanguage(java.lang.String language)
    {
       this.language = language;
+      if(key!=null)
+        this.message = language.equals("ar") ? arabicMessages.get(key) : englishMessages.get(key);
    }
 
    public RuleValidation(java.lang.String key, java.lang.String message,
