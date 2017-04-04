@@ -19,8 +19,6 @@ public class DeductionRequest implements java.io.Serializable
    @org.kie.api.definition.type.Label("Deduction Type")
    private java.lang.String deductionType;
 
-   private java.lang.String requestor;
-
    public DeductionRequest()
    {
    }
@@ -55,23 +53,12 @@ public class DeductionRequest implements java.io.Serializable
       this.deductionType = deductionType;
    }
 
-   public java.lang.String getRequestor()
-   {
-      return this.requestor;
-   }
-
-   public void setRequestor(java.lang.String requestor)
-   {
-      this.requestor = requestor;
-   }
-
    public DeductionRequest(java.lang.Float amount, java.lang.String requestStatus,
-         java.lang.String deductionType, java.lang.String requestor)
+         java.lang.String deductionType)
    {
       this.amount = amount;
       this.requestStatus = requestStatus;
       this.deductionType = deductionType;
-      this.requestor = requestor;
    }
 
 }
