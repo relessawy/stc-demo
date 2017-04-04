@@ -15,7 +15,6 @@ public class RuleValidation implements java.io.Serializable
 
    private Map<String, String> englishMessages = new HashMap<String, String>();
    private Map<String, String> arabicMessages = new HashMap<String, String>();
-   private Map<String, String> arabicMessages = new HashMap<String, String>();
    private ArrayList<String> keys = new ArrayList<String>();
 
    private java.lang.String key;
