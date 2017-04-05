@@ -3,4 +3,7 @@
 <property name="name" value="deduction.SalaryDeductionRest-taskform.form"/>
 <property name="displayMode" value="default"/>
 <property name="status" value="0"/>
+<dataHolder inputId="employee" name="#E9E371" type="dataModelerEntry" outId="employee" value="deduction.Employee" id="employee"/>
+<dataHolder inputId="request" name="#E9E371" type="dataModelerEntry" outId="request" value="deduction.DeductionRequest" id="request"/>
+<dataHolder inputId="ruleValidation" name="#E9E371" type="dataModelerEntry" outId="ruleValidation" value="deduction.RuleValidation" id="ruleValidation"/>
 </form>
