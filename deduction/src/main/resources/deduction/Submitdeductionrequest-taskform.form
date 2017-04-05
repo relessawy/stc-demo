@@ -73,7 +73,16 @@
 <property name="outputBinding" value="ruleValidation/message"/>
 <property name="fieldClass" value="java.lang.String"/>
 </field>
+<field position="6" name="initiator" type="InputText" id="1713544605">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;initiator (initiator)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="initiator"/>
+<property name="outputBinding" value="initiator"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
 <dataHolder inputId="employee" name="#E9E371" type="dataModelerEntry" outId="employee" value="deduction.Employee" id="employee"/>
+<dataHolder inputId="initiator" name="#E9E371" type="basicType" outId="initiator" value="java.lang.String" id="initiator"/>
 <dataHolder inputId="request" name="#FF54A7" type="dataModelerEntry" outId="request" value="deduction.DeductionRequest" id="request"/>
 <dataHolder inputId="ruleValidation" name="#E9E371" type="dataModelerEntry" outId="ruleValidation" value="deduction.RuleValidation" id="ruleValidation"/>
 </form>
