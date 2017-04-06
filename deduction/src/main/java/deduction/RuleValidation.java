@@ -31,8 +31,8 @@ public class RuleValidation implements java.io.Serializable
       englishMessages.put("rule02", "Deduction amount cannot be greater than net salary");
       arabicMessages.put("rule02", "المبلغ المراد خصمه لا يمكن ان يكون اكبر من اجمالي الراتب");
 
-      englishMessages.put("rule03", "");
-      arabicMessages.put("rule03", "");
+      englishMessages.put("rule03", "You can't request for Fitness Time more than one time per year if your previous request is accepted");
+      arabicMessages.put("rule03", "لا يمكن تقديم طلب استقطاع بخصوص وقت اللياقة أكثر من مرة واحدة فى العام إذا تم الموافقة");
 
       englishMessages.put("rule04", "");
       arabicMessages.put("rule04", "");
