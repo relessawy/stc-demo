@@ -39,7 +39,9 @@ public class RuleValidation implements java.io.Serializable
       
       englishMessages.put("rule05", "Record Already Exists for the given service for that employee");
       arabicMessages.put("rule05", "يوجد لديك طلب سابق");
-      
+
+      englishMessages.put("rule06", "You can’t stop donation for one time donations");
+      arabicMessages.put("rule06", "لا يمكن ايقاف الخصم من الراتب لطلب اقتطاع مرة واحدة");
    }
 
    public java.lang.String getKey()
