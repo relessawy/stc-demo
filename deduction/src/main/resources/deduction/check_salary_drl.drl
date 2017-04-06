@@ -24,14 +24,3 @@ rule "check_salary_not_allowed"
 		request.setRequestStatus( "Not Allowed" );
 end
 
-rule "check_previous_requests"
-	dialect "mvel"
-	ruleflow-group "salary"
-	when
-		emp : Employee( )
-		request : DeductionRequest()
-		ruleValidation : RuleValidation()
-	then
-	    ruleValidation.addValidationRule("rule01");
-		request.setRequestStatus( "Not Allowed" );
-end
