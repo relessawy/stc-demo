@@ -24,3 +24,14 @@ rule "check_salary_not_allowed"
 		request.setRequestStatus( "Not Allowed" );
 end
 
+rule "check_salary_not_allowed"
+	dialect "mvel"
+	ruleflow-group "salary"
+	when
+		emp : Employee( )
+		request : DeductionRequest(  ) )
+		ruleValidation : RuleValidation()
+	then
+	    ruleValidation.addValidationRule("rule03");
+		request.setRequestStatus( "Not Allowed" );
+end
