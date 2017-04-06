@@ -34,8 +34,12 @@ public class RuleValidation implements java.io.Serializable
       englishMessages.put("rule03", "You can't request for Fitness Time more than one time per year if your previous request is accepted");
       arabicMessages.put("rule03", "لا يمكن تقديم طلب استقطاع بخصوص وقت اللياقة أكثر من مرة واحدة فى العام إذا تم الموافقة");
 
-      englishMessages.put("rule04", "");
-      arabicMessages.put("rule04", "");
+      englishMessages.put("rule04", "You have already raised the request and it is pending with Compensation Department for Approval");
+      arabicMessages.put("rule04", "يوجد لديك طلب سابق معلق");
+      
+      englishMessages.put("rule05", "Record Already Exists for the given service for that employee");
+      arabicMessages.put("rule05", "يوجد لديك طلب سابق");
+      
    }
 
    public java.lang.String getKey()
