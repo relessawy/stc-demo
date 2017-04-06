@@ -29,7 +29,7 @@ rule "check_salary_not_allowed"
 	ruleflow-group "salary"
 	when
 		emp : Employee( )
-		request : DeductionRequest(  ) )
+		request : DeductionRequest( deductionType =="Fitness Time" && donateTo == "Legam com" ) )
 		ruleValidation : RuleValidation()
 	then
 	    ruleValidation.addValidationRule("rule03");
