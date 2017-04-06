@@ -59,9 +59,5 @@ public class Employee implements java.io.Serializable
       this.name = name;
       this.salary = salary;
    }
-
-   public String toString(){
-    return "<employee><id>"+ id +"<name>" + name + "</name><salary>" + String.valueOf(salary) + "</salary></employee>";
-   }
    
 }
