@@ -28,7 +28,7 @@ rule "check_salary_not_allowed"
 	dialect "mvel"
 	ruleflow-group "salary"
 	when
-		emp : Employee( )
+		emp : Employee(fitnessTimeLastYear=="Yes" )
 		request : DeductionRequest( deductionType =="Fitness Time" && donateTo == "Legam com" ) )
 		ruleValidation : RuleValidation()
 	then
