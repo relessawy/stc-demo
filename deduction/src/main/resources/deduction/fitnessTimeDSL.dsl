@@ -1,0 +1,1 @@
+[when]Empoyee applied for {deductionType} donating to {donateTo}= DeductionRequest(deductionType=="{deductionType}" && donateTo=="{donateTo}")
