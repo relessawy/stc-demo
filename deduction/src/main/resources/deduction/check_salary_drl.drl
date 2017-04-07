@@ -30,7 +30,7 @@ rule "check_fitness_time"
 	ruleflow-group "salary"
 	when
 		emp : Employee ( fitnessTimeLastYear == "Yes" )
-		request : DeductionRequest( deductionType =="Fitness Time" && donateTo == "Legam com" ) )
+		request : DeductionRequest( deductionType =="Fitness Time" && donateTo == "Legam com" ) 
 		ruleValidation : RuleValidation()
 	then
 	    ruleValidation.addValidationRule("rule03");
