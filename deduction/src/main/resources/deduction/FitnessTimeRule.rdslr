@@ -1,0 +1,9 @@
+package deduction;
+
+import java.lang.Number;
+
+rule "FitnessTimeRule"
+	dialect "mvel"
+	when
+	then
+end
