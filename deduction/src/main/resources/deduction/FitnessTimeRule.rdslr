@@ -7,5 +7,9 @@ rule "FitnessTimeRule"
 	when
 		Empoyee applied for Fitness Time donating to Legam com
 		>emp : Employee( fitnessTimeLastYear == "Yes" )
+		>ruleValidation : RuleValidation( )
+		>request : DeductionRequest( )
 	then
+		>ruleValidation.setKey( "rule03" );
+		>request.setRequestStatus( "Not Allowed" );
 end
