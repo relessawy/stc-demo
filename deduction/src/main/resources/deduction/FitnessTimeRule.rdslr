@@ -10,6 +10,6 @@ rule "FitnessTimeRule"
 		>ruleValidation : RuleValidation( )
 		>request : DeductionRequest( )
 	then
-		>ruleValidation.setKey( "rule03" );
 		>request.setRequestStatus( "Not Allowed" );
+		>ruleValidation.addValidationRule( "rule03" );
 end
