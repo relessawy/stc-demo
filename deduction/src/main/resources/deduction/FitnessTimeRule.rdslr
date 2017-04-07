@@ -5,5 +5,7 @@ import java.lang.Number;
 rule "FitnessTimeRule"
 	dialect "mvel"
 	when
+		Empoyee applied for Fitness Time donating to Legam com
+		>emp : Employee( fitnessTimeLastYear == "Yes" )
 	then
 end
