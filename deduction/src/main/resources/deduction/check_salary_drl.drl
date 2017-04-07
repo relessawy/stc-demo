@@ -24,3 +24,15 @@ rule "check_salary_not_allowed"
 		request.setRequestStatus( "Not Allowed" );
 end
 
+
+rule "check_fitness_time"
+	dialect "mvel"
+	ruleflow-group "salary"
+	when
+		emp : Employe e( fitnessTimeLastYear == "Yes" )
+		request : DeductionRequest( deductionType =="Fitness Time" and donateTo == "Legam com" ) )
+		ruleValidation : RuleValidation()
+	then
+	    ruleValidation.addValidationRule("rule03");
+		request.setRequestStatus( "Not Allowed" );
+end
