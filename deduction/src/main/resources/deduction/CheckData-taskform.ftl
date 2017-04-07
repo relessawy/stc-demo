@@ -50,9 +50,7 @@
 		var myInputs = new Array();
 					myInputs[i] = document.getElementById("employee");
 					i++;
-					myInputs[i] = document.getElementById("request");
-					i++;
-					myInputs[i] = document.getElementById("ruleValidation");
+					myInputs[i] = document.getElementById("retry");
 					i++;
 
 
@@ -65,14 +63,7 @@
 			
 					j++;
 						if(notEmpty(myInputs[j]) && !isAlphanumeric(myInputs[j])) {
-							alert("Please enter valid request");
-							myInputs[j].focus();
-							return false;
-						}
-			
-					j++;
-						if(notEmpty(myInputs[j]) && !isAlphanumeric(myInputs[j])) {
-							alert("Please enter valid ruleValidation");
+							alert("Please enter valid retry");
 							myInputs[j].focus();
 							return false;
 						}
@@ -229,7 +220,7 @@
 </style>
 <div id="container">
 	<div id="header">
-		User Task Form: SalaryDeductionErrHandling.Submitdeductionrequest
+		User Task Form: SalaryDeductionErrHandling.CheckData
 	</div>
 	<div id="content">
 	    <input type="hidden" name="taskId" value="${task.id}"/>
@@ -242,7 +233,7 @@
             	<label for="name">Actor ID</label>
             	<div class="div_checkbox"></div>
             	<label for="name">Group</label>
-            	<div class="div_checkbox"><![CDATA[employee]]></div>
+            	<div class="div_checkbox"></div>
             	<label for="name">Skippable</label>
             	<div class="div_checkbox">true</div>
             	<label for="name">Priority</label>
@@ -258,14 +249,6 @@
                             		<div class="div_checkbox">
                               		${employee}
                             		</div>
-                            		<label for="name">request</label>
-                            		<div class="div_checkbox">
-                              		${request}
-                            		</div>
-                            		<label for="name">ruleValidation</label>
-                            		<div class="div_checkbox">
-                              		${ruleValidation}
-                            		</div>
 
             <div class="clear"></div>
           </fieldset>
@@ -277,14 +260,9 @@
                               		<input name="employee" type="text" class="textbox" id="employee" value="${employee}" />
                             		</div>
               	
-                            		<label for="name">request</label>
-                            		<div class="div_texbox">
-                              		<input name="request" type="text" class="textbox" id="request" value="${request}" />
-                            		</div>
-              	
-                            		<label for="name">ruleValidation</label>
-                            		<div class="div_texbox">
-                              		<input name="ruleValidation" type="text" class="textbox" id="ruleValidation" value="${ruleValidation}" />
+                            		<label for="name">retry</label>
+                            		<div class="div_checkbox">
+                              		<input name="retry" type="checkbox" class="checkbox" id="retry" value="${retry}" />
                             		</div>
               	
 

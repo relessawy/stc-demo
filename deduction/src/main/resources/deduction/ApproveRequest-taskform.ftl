@@ -220,7 +220,7 @@
 </style>
 <div id="container">
 	<div id="header">
-		User Task Form: SalaryDeduction.ApproveRequest
+		User Task Form: SalaryDeductionErrHandling.ApproveRequest
 	</div>
 	<div id="content">
 	    <input type="hidden" name="taskId" value="${task.id}"/>
@@ -228,13 +228,12 @@
             <legend>Task Info</legend>
             	<label for="name">Owners</label>
             	<div class="div_checkbox">
-											wael
             	
             	</div>
             	<label for="name">Actor ID</label>
             	<div class="div_checkbox"></div>
             	<label for="name">Group</label>
-            	<div class="div_checkbox"><![CDATA[admin]]></div>
+            	<div class="div_checkbox"><![CDATA[hr]]></div>
             	<label for="name">Skippable</label>
             	<div class="div_checkbox">true</div>
             	<label for="name">Priority</label>
@@ -253,6 +252,14 @@
                             		<label for="name">request</label>
                             		<div class="div_checkbox">
                               		${request}
+                            		</div>
+                            		<label for="name">NotCompletedReassign</label>
+                            		<div class="div_checkbox">
+                              		<![CDATA[[users:|groups:manager]@[1m]]]>
+                            		</div>
+                            		<label for="name">NotStartedReassign</label>
+                            		<div class="div_checkbox">
+                              		<![CDATA[[users:|groups:manager]@[1m]]]>
                             		</div>
 
             <div class="clear"></div>

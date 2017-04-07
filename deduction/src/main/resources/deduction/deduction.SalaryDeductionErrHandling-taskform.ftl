@@ -48,35 +48,32 @@
 	function taskFormValidator() {
 		var i=0;
 		var myInputs = new Array();
-					myInputs[i] = document.getElementById("employee");
+					myInputs[i] = document.getElementById("wsErrorStack");
 					i++;
-					myInputs[i] = document.getElementById("request");
+					myInputs[i] = document.getElementById("requestor");
 					i++;
-					myInputs[i] = document.getElementById("ruleValidation");
+					myInputs[i] = document.getElementById("retry");
 					i++;
 
 
 		var j=0;
 						if(notEmpty(myInputs[j]) && !isAlphanumeric(myInputs[j])) {
-							alert("Please enter valid employee");
+							alert("Please enter valid wsErrorStack");
 							myInputs[j].focus();
 							return false;
 						}
-			
 					j++;
 						if(notEmpty(myInputs[j]) && !isAlphanumeric(myInputs[j])) {
-							alert("Please enter valid request");
+							alert("Please enter valid requestor");
 							myInputs[j].focus();
 							return false;
 						}
-			
 					j++;
 						if(notEmpty(myInputs[j]) && !isAlphanumeric(myInputs[j])) {
-							alert("Please enter valid ruleValidation");
+							alert("Please enter valid retry");
 							myInputs[j].focus();
 							return false;
 						}
-			
 					j++;
 
 		return true;
@@ -229,62 +226,25 @@
 </style>
 <div id="container">
 	<div id="header">
-		User Task Form: SalaryDeductionErrHandling.Submitdeductionrequest
+		New Process Instance: /deduction/src/main/resources/deduction.SalaryDeductionErrHandling
 	</div>
 	<div id="content">
-	    <input type="hidden" name="taskId" value="${task.id}"/>
+	    <input type="hidden" name="processId" value="${process.id}"/>
 		<fieldset>
-            <legend>Task Info</legend>
-            	<label for="name">Owners</label>
-            	<div class="div_checkbox">
-            	
-            	</div>
-            	<label for="name">Actor ID</label>
-            	<div class="div_checkbox"></div>
-            	<label for="name">Group</label>
-            	<div class="div_checkbox"><![CDATA[employee]]></div>
-            	<label for="name">Skippable</label>
-            	<div class="div_checkbox">true</div>
-            	<label for="name">Priority</label>
-            	<div class="div_checkbox"></div>
-            	<label for="name">Comment</label>
-            	<div class="div_checkbox"></div>
-            <div class="clear"></div>
-          </fieldset>
-
-		<fieldset>
-            <legend>Task Inputs</legend>
-                            		<label for="name">employee</label>
-                            		<div class="div_checkbox">
-                              		${employee}
-                            		</div>
-                            		<label for="name">request</label>
-                            		<div class="div_checkbox">
-                              		${request}
-                            		</div>
-                            		<label for="name">ruleValidation</label>
-                            		<div class="div_checkbox">
-                              		${ruleValidation}
-                            		</div>
-
-            <div class="clear"></div>
-          </fieldset>
-
-          <fieldset>
-            <legend>Task Outputs</legend>
-                            		<label for="name">employee</label>
+            <legend>Process inputs</legend>
+                            		<label for="name">wsErrorStack</label>
                             		<div class="div_texbox">
-                              		<input name="employee" type="text" class="textbox" id="employee" value="${employee}" />
+                              		<input name="wsErrorStack" type="text" class="textbox" id="wsErrorStack" value="" />
                             		</div>
               	
-                            		<label for="name">request</label>
+                            		<label for="name">requestor</label>
                             		<div class="div_texbox">
-                              		<input name="request" type="text" class="textbox" id="request" value="${request}" />
+                              		<input name="requestor" type="text" class="textbox" id="requestor" value="" />
                             		</div>
               	
-                            		<label for="name">ruleValidation</label>
-                            		<div class="div_texbox">
-                              		<input name="ruleValidation" type="text" class="textbox" id="ruleValidation" value="${ruleValidation}" />
+                            		<label for="name">retry</label>
+                            		<div class="div_checkbox">
+                              		<input name="retry" type="checkbox" class="checkbox" id="retry" value="true" />
                             		</div>
               	
 
