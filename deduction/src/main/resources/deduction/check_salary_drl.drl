@@ -20,6 +20,7 @@ rule "check_salary_not_allowed"
 		request : DeductionRequest( amount >= ( emp.getSalary() ) )
 		ruleValidation : RuleValidation()
 	then
+	    retract(ruleValidation)
 	    ruleValidation.addValidationRule("rule02");
 		request.setRequestStatus( "Not Allowed" );
 end
@@ -33,6 +34,7 @@ rule "check_fitness_time"
 		request : DeductionRequest( "Fitness Time".equals(deductionType) && "Legam com".equals(donateTo) ) 
 		ruleValidation : RuleValidation()
 	then
+	    retract(ruleValidation)
 	    ruleValidation.addValidationRule("rule03");
 		request.setRequestStatus( "Not Allowed" );
 end
