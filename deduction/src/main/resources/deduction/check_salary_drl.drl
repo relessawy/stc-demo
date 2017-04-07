@@ -29,8 +29,8 @@ rule "check_fitness_time"
 	dialect "mvel"
 	ruleflow-group "salary"
 	when
-		emp : Employe e( fitnessTimeLastYear == "Yes" )
-		request : DeductionRequest( deductionType =="Fitness Time" and donateTo == "Legam com" ) )
+		emp : Employee ( fitnessTimeLastYear == "Yes" )
+		request : DeductionRequest( deductionType =="Fitness Time" && donateTo == "Legam com" ) )
 		ruleValidation : RuleValidation()
 	then
 	    ruleValidation.addValidationRule("rule03");
